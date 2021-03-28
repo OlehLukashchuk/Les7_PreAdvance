@@ -69,6 +69,9 @@ const getInfo = async (info) => {
 
 // Фунція генератор сторінки з усіма фільмами,після отримання данних від сервера.
 function buildPage(data) {
+
+  window.scrollTo({top:0,behavior:'smooth'})
+
   let allFilms = data.Search;
   filmContainer.innerHTML = '';
   document.querySelector('.filmName').style.color = 'black'
